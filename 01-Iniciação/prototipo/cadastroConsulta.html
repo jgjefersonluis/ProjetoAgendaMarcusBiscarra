@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Badesul - Consulta Dinâmica</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="css/estilo.css" rel="stylesheet">
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<form name="fMeusDados">
+
+
+
+	 
+    <div class="container-fluid">
+    	<div class="row-fluid">
+    	
+    	
+    	
+    	<div class="span8">
+    		
+    		<div class="accordion" id="accordion2">
+    			<div class="accordion-group">   
+    				<div class="accordion-heading">
+    					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+    						Filtro</a>
+    				</div>
+    				<div id="collapseOne" class="accordion-body collapse in">
+    					<div class="accordion-inner">		
+    							
+    							<table width=800px>
+    								<tr>
+    									<td><input type="checkbox">Razão Social</td>
+    									<td>
+    									<select id="operators" name="operador" >    										
+											<option value="=">igual a</option>
+											<option value="!">diferente de</option>											
+											<option value="%">Contém</option>
+										</select>
+										</td>
+    									<td width=400px>
+    										<input type="text" value="">
+    									</td>
+    								</tr>
+    								
+    								<tr>
+    									<td><input type="checkbox">Superintêndencia</td>
+    									<td>
+    									<select id="operators" name="operador" >    										
+											<option value="=">igual a</option>
+											<option value="!">diferente de</option>											
+											
+										</select>
+										</td>
+    									<td width=400px>
+    									
+    										 <ul class="nav nav-list">								                  
+								                  
+								                                    
+								                  <li><a href="#"><input type="CheckBox"></i> SUPERINT DE INVESTIMENTO E INOVACAO</a></li>
+								                  <li><a href="#"><input type="CheckBox"></i>SUPERINT. OPER. SETOR PUBLICO</a></li>								                                    
+								                  <li><a href="#"><input type="CheckBox"></i>SUPERINTENDENCIA DE COBRANCA</a></li>
+							                   
+							                </ul>
+							           
+    										
+    									</td>
+    								</tr>
+    								
+    							</table>
+    								
+          				</div>
+    	    	
+    	
+					</div>
+					</div>
+			</div>
+			<div class="accordion" id="accordion3">
+    			<div class="accordion-group">   
+    				<div class="accordion-heading">
+    					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseEndereco">
+    						Opções</a>
+    				</div>
+    				<div id="collapseEndereco" class="accordion-body collapse in">
+    					<div class="accordion-inner">		
+    							<div class="control-group">
+					            <label class="control-label">Colunas</label>
+						            <div class="controls docs-input-sizes">              
+						            	<table width=100%>
+						            	<tr>
+						            	<td>
+						             	<select class="span10" size=5>
+							                <option>	area responsavel	</option>
+												<option>	CI Proposta	</option>
+												<option>	Razão Social	</option>
+												<option>	Nome Município	</option>
+												<option>	COREDE	</option>
+												<option>	Descrição	</option>
+												<option>	Inicio	</option>
+												<option>	Valor	</option>
+												<option>	descrição do programa	</option>
+												<option>	valor investimento	</option>
+												<option>	IBGE	</option>
+												<option>	IBGE Grupo 3	</option>
+												<option>	Descrição 3	</option>
+												<option>	Descrição	</option>
+												<option>	Essencia florestal	</option>
+												<option>	capacarmaz	</option>
+												<option>	capacirrigacao	</option>
+												<option>	numhectares	</option>
+												<option>	empregos diretos gerados	</option>
+												<option>	ICMS gerado ano	</option>
+												<option>	Descrição Fundo	</option>
+												<option>	percentual fundo	</option>
+												<option>	nome feira	</option>
+												<option>	Risco do Projeto	</option>
+												<option>	Data da proposta	</option>
+												<option>	Tipo do Projeto	</option>
+												<option>	Linha de Credito	</option>
+												<option>	Numero do Projeto	</option>
+												<option>	Tipo de Reunião	</option>
+												<option>	Dt Reunião	</option>
+												<option>	Numero	</option>
+												<option>	Financiamento	</option>
+												<option>	Superintêndencia	</option>
+												<option>	Produto	</option>
+												<option>	Status Atual	</option>
+												<option>	Data da Reunião	</option>
+												<option>	Favorável/Decisão	</option>
+												<option>	Situação	</option>
+
+							              </select>
+						            	</td>
+						            	<td>
+						            	   <button  class="btn"  >--></button>						            	
+						            	</td>   
+						            	<td>
+						            		
+						            	
+						            	<select class="span10" size=5>
+							                <option>	area responsavel	</option>
+												<option>	CI Proposta	</option>
+												<option>	Razão Social	</option>
+												<option>	Nome Município	</option>
+												<option>	COREDE	</option>
+												<option>	Descrição	</option>
+												<option>	Inicio	</option>
+												<option>	Valor	</option>
+												<option>	descrição do programa	</option>
+												<option>	valor investimento	</option>
+												<option>	IBGE	</option>
+												<option>	IBGE Grupo 3	</option>
+												<option>	Descrição 3	</option>
+												<option>	Descrição	</option>
+												<option>	Essencia florestal	</option>
+												<option>	capacarmaz	</option>
+												<option>	capacirrigacao	</option>
+												<option>	numhectares	</option>
+												<option>	empregos diretos gerados	</option>
+												<option>	ICMS gerado ano	</option>
+												<option>	Descrição Fundo	</option>
+												<option>	percentual fundo	</option>
+												<option>	nome feira	</option>
+												<option>	Risco do Projeto	</option>
+												<option>	Data da proposta	</option>
+												<option>	Tipo do Projeto	</option>
+												<option>	Linha de Credito	</option>
+												<option>	Numero do Projeto	</option>
+												<option>	Tipo de Reunião	</option>
+												<option>	Dt Reunião	</option>
+												<option>	Numero	</option>
+												<option>	Financiamento	</option>
+												<option>	Superintêndencia	</option>
+												<option>	Produto	</option>
+												<option>	Status Atual	</option>
+												<option>	Data da Reunião	</option>
+												<option>	Favorável/Decisão	</option>
+												<option>	Situação	</option>
+
+							              </select>
+							              
+						            	   
+							              </td></tr>
+							              
+							              <tr>
+							              <td colspan=4>Título do Relatório: <input type="text" value=""></td>
+							              
+							              </tr>
+							            </table>  					              					            	                             
+						            </div>
+						            					            
+					            
+					          </div>					
+          				</div>
+    	    	
+					</div>
+					</div>
+			</div>
+		
+			
+			
+			
+			
+		
+			<div class="form-actions">
+            <button  class="btn"  >limpar</button>
+            <button type="submit" class="btn btn-primary">filtrar</button>
+            <a href="#myProposta" data-toggle="modal"><button  class="btn"  >Salvar</button></a>
+            
+             
+             
+          </div>	
+			
+			<div style="overflow:scroll;width:1240px" >
+		
+			<table>
+				<tr>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white;width:100px" nowrap>	area responsavel	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	CI Proposta	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Razão Social	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Nome Município	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	COREDE	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Descrição	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Inicio	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Valor	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	descrição do programa	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	valor investimento	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	IBGE	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	IBGE Grupo 3	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Descrição 3	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Descrição	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Essencia florestal	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	capacarmaz	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	capacirrigacao	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	numhectares	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	empregos diretos gerados	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	ICMS gerado ano	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	Descrição Fundo	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	percentual fundo	</td>
+					<td style="border:1px solid;background-color:#036f36;text-align:center;color:white" nowrap>	nome feira	</td>
+
+				</tr>
+				
+				<tr>
+					<td style="border:1px solid" >	area responsavel	</td>
+					<td style="border:1px solid">	CI Proposta	</td>
+					<td style="border:1px solid">	Razão Social	</td>
+					<td style="border:1px solid">	Nome Município	</td>
+					<td style="border:1px solid">	COREDE	</td>
+					<td style="border:1px solid">	Descrição	</td>
+					<td style="border:1px solid">	Inicio	</td>
+					<td style="border:1px solid">	Valor	</td>
+					<td style="border:1px solid">	descrição do programa	</td>
+					<td style="border:1px solid">	valor investimento	</td>
+					<td style="border:1px solid">	IBGE	</td>
+					<td style="border:1px solid">	IBGE Grupo 3	</td>
+					<td style="border:1px solid">	Descrição 3	</td>
+					<td style="border:1px solid">	Descrição	</td>
+					<td style="border:1px solid">	Essencia florestal	</td>
+					<td style="border:1px solid">	capacarmaz	</td>
+					<td style="border:1px solid">	capacirrigacao	</td>
+					<td style="border:1px solid">	numhectares	</td>
+					<td style="border:1px solid">	empregos diretos gerados	</td>
+					<td style="border:1px solid">	ICMS gerado ano	</td>
+					<td style="border:1px solid">	Descrição Fundo	</td>
+					<td style="border:1px solid">	percentual fundo	</td>
+					<td style="border:1px solid">	nome feira	</td>
+				</tr>
+				
+				<tr>
+					<td style="border:1px solid">	area responsavel	</td>
+					<td style="border:1px solid">	CI Proposta	</td>
+					<td style="border:1px solid">	Razão Social	</td>
+					<td style="border:1px solid">	Nome Município	</td>
+					<td style="border:1px solid">	COREDE	</td>
+					<td style="border:1px solid">	Descrição	</td>
+					<td style="border:1px solid">	Inicio	</td>
+					<td style="border:1px solid">	Valor	</td>
+					<td style="border:1px solid">	descrição do programa	</td>
+					<td style="border:1px solid">	valor investimento	</td>
+					<td style="border:1px solid">	IBGE	</td>
+					<td style="border:1px solid">	IBGE Grupo 3	</td>
+					<td style="border:1px solid">	Descrição 3	</td>
+					<td style="border:1px solid">	Descrição	</td>
+					<td style="border:1px solid">	Essencia florestal	</td>
+					<td style="border:1px solid">	capacarmaz	</td>
+					<td style="border:1px solid">	capacirrigacao	</td>
+					<td style="border:1px solid">	numhectares	</td>
+					<td style="border:1px solid">	empregos diretos gerados	</td>
+					<td style="border:1px solid">	ICMS gerado ano	</td>
+					<td style="border:1px solid">	Descrição Fundo	</td>
+					<td style="border:1px solid">	percentual fundo	</td>
+					<td style="border:1px solid">	nome feira	</td>
+				</tr>
+				
+			</table>
+    		</div>	
+        
+			<div class="form-actions">
+            <button class="btn"  >PDF</button>
+            <button class="btn">Excel</button>
+          </div>	
+			
+		</div>
+		
+		
+		
+		
+		<div class="span3">
+    		 <div class="well">
+    		 Adicionar filtro:
+			  <select class="span10">
+              	<option>	area responsavel	</option>
+				<option>	CI Proposta	</option>
+				<option>	Razão Social	</option>
+				<option>	Nome Município	</option>
+				<option>	COREDE	</option>
+				<option>	Descrição	</option>
+				<option>	Inicio	</option>
+				<option>	Valor	</option>
+				<option>	descrição do programa	</option>
+				<option>	valor investimento	</option>
+				<option>	IBGE	</option>
+				<option>	IBGE Grupo 3	</option>
+				<option>	Descrição 3	</option>
+				<option>	Descrição	</option>
+				<option>	Essencia florestal	</option>
+				<option>	capacarmaz	</option>
+				<option>	capacirrigacao	</option>
+				<option>	numhectares	</option>
+				<option>	empregos diretos gerados	</option>
+				<option>	ICMS gerado ano	</option>
+				<option>	Descrição Fundo	</option>
+				<option>	percentual fundo	</option>
+				<option>	nome feira	</option>
+				<option>	Risco do Projeto	</option>
+				<option>	Data da proposta	</option>
+				<option>	Tipo do Projeto	</option>
+				<option>	Linha de Credito	</option>
+				<option>	Numero do Projeto	</option>
+				<option>	Tupo de Reunião	</option>
+				<option>	Dt Reunião	</option>
+				<option>	Numero	</option>
+				<option>	Financiamento	</option>
+				<option>	Superintêndencia	</option>
+				<option>	Produto	</option>
+				<option>	Status Atual	</option>
+				<option>	Data da Reunião	</option>
+				<option>	Favorável/Decisão	</option>
+				<option>	Situação	</option>
+
+              </select>
+              </div>
+              
+	        <div class="well">
+				
+				  <ul class="nav nav-list">
+                  <li class="nav-header">Minhas Consultas Personalizadas</li>
+                  
+                                    
+                  <li><a href="#"><i class="icon-list-alt"></i> Setor Público</a></li>
+                  <li><a href="#"><i class="icon-list-alt"></i> COREDE: Litoral Norte</a></li>
+                                    
+                  <li class="nav-header">Públicas</li>
+                  <li><i class="icon-list-alt"></i>Projetos Aprovados</li>
+                   
+                </ul>
+    		</div>
+		
+    </div>
+    </div>
+    
+	    
+	
+	
+</form>
+
+
+<div id="myProposta" class="modal hide fade">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Salvar Consulta Dinâmica</h3>
+    </div>
+    <div class="modal-body">
+    
+    <form name="fProposta">
+    	
+    	Nome da Conusulta	
+    	<input type="text" value="">
+    	<br>
+    	<input type="checkbox"> Consulta Públicas
+    </form>
+    
+    
+    </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Sair</button>    
+    <a href="#" class="btn btn-primary">Salvar</a>
+    </div>
+    </div>
+   	
+    
+    
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

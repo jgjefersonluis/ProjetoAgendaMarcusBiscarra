@@ -1,0 +1,10 @@
+#header-text .bg {
+    background-image: url('../images/DSC00306.JPG');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    opacity: 0.44;
+}
+#header-text .bg-wrap {
+	background: #000000;
+}
